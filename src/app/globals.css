@@ -19,3 +19,16 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.line {
+  position: relative;
+}
+
+.line::after {
+  content: "";
+  display: inline-block;
+  height: 0.5rem; /* Tailwind h-4 */
+  width: 1px; /* Tailwind w-px */
+
+  background-color: #d1d5db; /* Tailwind bg-gray-300 */
+  margin: 0.1rem; /* Tailwind mx-2 (0.5rem 양쪽 마진) */
+}
